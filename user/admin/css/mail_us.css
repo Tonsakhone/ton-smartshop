@@ -1,0 +1,105 @@
+.mail-w3ls {
+    padding: 5em 0;
+}
+.mail-grid i {
+    font-size: 1.5em;
+    border-radius: 60px;
+    border: 2px solid #fbb005;
+    padding: 1em;
+    color: #fff;
+    background: #fbb005;
+	transition: .5s all;
+    -webkit-transition: .5s all;
+    -moz-transition: .5s all;
+    -o-transition: .5s all;
+    -ms-transition: .5s all;
+}
+.mail-grid i:hover {
+    background: #0d59af;
+}
+.mail-grids {
+    margin-top: 4em;
+}
+.mail-grid h5 {
+    font-size: 1.8em;
+    color: #1565c0;
+    margin-top: .5em;
+}
+.mail-grid p {
+    font-size: 1em;
+    color: #777;
+	margin-top:.5em;
+}
+.mail-top {
+    text-align: center;
+}
+.map-w3 iframe {
+    width: 100%;
+    height: 350px;
+    border: 7px double #fbb005;
+}
+.map-w3 {
+    margin: 4em 0;
+}
+.mail-bottom h4 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+    color: #1565c0;
+}
+.mail-bottom input[type="text"], .mail-bottom input[type="email"] {
+     width: 32.9%;
+    float: left;
+}
+.mail-bottom textarea {
+    min-height: 200px;
+    resize: none;
+    width: 100%;
+    margin: 1em 0;
+}
+.mail-bottom input[type="text"], .mail-bottom input[type="email"], .mail-bottom textarea {
+    background: none;
+    border: 1px solid #D9D9D9;
+    color: #A3A3A3;
+    padding: 13px 10px;
+    font-size: 14px;
+    outline: none;
+}
+.mail-bottom input[type="email"] {
+    margin: 0 6px;
+}
+.mail-bottom input[type="submit"], .mail-bottom input[type="reset"] {
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+    padding: 13px 0;
+    width: 12%;
+    background: #fbb005;
+    border: none;
+    transition: .5s all;
+    -webkit-transition: .5s all;
+    -moz-transition: .5s all;
+    -o-transition: .5s all;
+    -ms-transition: .5s all;
+}
+.mail-bottom input[type="submit"]:hover, .mail-bottom input[type="reset"]:hover {
+    background: #1565C0;
+}
+/*--mail--*/
+/*--login--*/
+.login{
+	padding:6em 0;
+}
+.account-grids {
+    margin-top: 2em;
+}
+.main-agileits {
+    width: 30%;
+    margin: 0em auto ;
+	box-shadow: 0px 0px 15px 0px #D6D6D6;
+	-o-box-shadow: 0px 0px 15px 0px #D6D6D6;
+	-moz-box-shadow: 0px 0px 15px 0px #D6D6D6;
+	-webkit-box-shadow: 0px 0px 15px 0px #D6D6D6;
+	padding: 3em ;
+}
+

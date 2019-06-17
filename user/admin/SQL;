@@ -1,0 +1,9 @@
+			how to select timestamp
+select date_format(ຊື່ຖັນ, '%m') as m from ຊື່ຕາຕະລາງ group by m
+ເລືອກສະເພາະເດືອນທີ່ໄດ້ຂາຍ
+ loop m ອອກມາ{
+ 	select total from ຊື່ຕາຕະລາງ where DATE(ຊື່ຖັນ) BETWEEN '2019-m-01 00:00:00' AND '2019-m-31 23:59:
+	ເລືອກລາຄາລວມພາຍໃນເດືອນ
+ }
+
+

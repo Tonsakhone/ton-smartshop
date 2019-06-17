@@ -1,0 +1,105 @@
+
+
+#navbar {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: ;
+  background-repeat: no-repeat;
+  width: 30%;
+  font-size: 16px;
+
+  margin-top: 12px;
+   margin-left: 12px;
+
+  
+}
+.fontlaos{
+  font-family: Phetsarath OT;
+}
+
+.blackground{
+  background-color: #f2f2f2;
+}
+.fonsize{
+  font-size: 20px;
+  color:  white;
+}
+.box{
+  width: 90%;
+  height: auto;
+}
+
+.imge{
+width: 100%;
+  height: 30%;
+}
+.input{
+  width: 80%;
+}
+ .u_ta{
+  width: 10px;
+height: 20px;
+ }
+ .form{
+  width: 50%;
+  height: 50%;
+margin-right: auto;
+margin-left: auto;
+ 
+}
+.img1{
+  width: auto;
+  height: auto;
+}
+.order{
+  width: 70%;
+  height: 70%;
+margin-right: auto;
+margin-left: auto;
+ 
+}
+.search {
+  background-image: url('/css/searchicon.png');
+  
+  background-repeat: no-repeat;
+  width: 5%;
+  font-size: 20px;
+  padding: 1px 30px 4.8px 2px;
+  
+  
+}
+.nounderline{
+  text-decoration: none;
+}
+
+.inpute{
+  width: 180%;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  display: inline-block;
+  border: none;
+  background: white;
+}
+
