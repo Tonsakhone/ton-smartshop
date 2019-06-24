@@ -91,7 +91,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse menu--shylock" id="bs-example-navbar-collapse-1">
 				  <ul class="nav navbar-nav menu__list">
-					<li class="active" id="home"><a class="menu__link" href="index.php"><h3 class="fontlaos"><b>ໜ້າຫຼັັກ</b></h3> <span class="sr-only">(current)</span></a></li>
+					<li class="active" id="home"><a class="menu__link" href="index.php"><h3 class="fontlaos"><b>ໜ້າຫຼັກ</b></h3> <span class="sr-only">(current)</span></a></li>
 					<li class=" menu__item" id="women"><a class="menu__link" href="women.php"><h3 class="fontlaos"><b>ສຳລັບທ່ານຍິງ</b></h3></a></li>
 					<li class=" menu__item" id="men"><a class="menu__link" href="men.php"><h3 class="fontlaos"><b>ສຳລັບທ່ານຊາຍ</b></h3></a></li>
 					<li class=" menu__item" id="dis"><a class="menu__link" href="promotion.php"><h3 class="fontlaos"><b>ສິນຄ້າທີ່ມີສ່ວນຫຼຸດ</b></h3></a></li>

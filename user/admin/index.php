@@ -71,3 +71,8 @@
 			</div><!--/.row-->
 		</div>
 <?php require'footer1.php' ?>
+<script type="text/javascript">
+    $("#home").addClass("active");
+  </script>
+
+ 

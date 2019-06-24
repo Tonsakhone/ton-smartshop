@@ -94,7 +94,7 @@ require'DB.php';
 					</a></li>
 				</ul>
 			</li>
-			<li><a href="logout.php"><em class="fa fa-power-off" style="color: red;">&nbsp;</em><b class="fontlaos">ອກກຈາກລະບົບ</b></a></li>
+			<li><a href="logout.php"><em class="fa fa-power-off" style="color: red;">&nbsp;</em><b class="fontlaos">ອອກຈາກລະບົບ</b></a></li>
 		</ul>
 	</div><!--/.sidebar-->
 	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">

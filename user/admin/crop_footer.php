@@ -54,23 +54,86 @@ $(function () {
        var that = this; //Clear input
 
      if (pro_name == '') {
-        alert('ກະລຸນາໃສ່ຊື່ສິນຄ້າ.');
+      Swal.fire({
+           position: 'center-start',
+           type: 'warning',
+           title:'<span class="fontlaos">ກະລຸນາປ້ອນຊື່ສິນຄ້າ</span>',
+           showConfirmButton: false,
+           timer: 2500
+         });
+        
      }else if(price == ''){
-        alert('ກະລຸນາໃສ່ລາຄາສິນຄ້າ.');
+      Swal.fire({
+           position: 'center-start',
+           type: 'warning',
+           title:'<span class="fontlaos">ກະລຸນາປ້ອນລາຄາສິນຄ້າ</span>',
+           showConfirmButton: false,
+           timer: 2500
+         });
+        
      }else if(dis == ''){
-        alert('ກະລຸນາໃສ່ສ່ວນຫຼຸດ.');
+      Swal.fire({
+           position: 'center-start',
+           type: 'warning',
+           title:'<span class="fontlaos">ກະລຸນາປ້ອນສ່ວນຫຼຸດ ຫຼື 0</span>',
+           showConfirmButton: false,
+           timer: 2500
+         });
+       
      }else if(s == ''){
-        alert('Please put S amount.');
-     }else if(m == 'ກະລຸນາໃສຈຳນວນ size s'){
-        alert('ກະລຸນາໃສຈຳນວນ size M');
+        Swal.fire({
+           position: 'center-start',
+           type: 'warning',
+           title:'<span class="fontlaos">ກະລຸນາປ້ອນຈຳນວນ size S</span>',
+           showConfirmButton: false,
+           timer: 2500
+         });
+        
+     }else if(m == ''){
+      Swal.fire({
+           position: 'center-start',
+           type: 'warning',
+           title:'<span class="fontlaos">ກະລຸນາປ້ອນຈຳນວນ size M</span>',
+           showConfirmButton: false,
+           timer: 2500
+         });
+        
      }else if(l == ''){
-        alert('ກະລຸນາໃສຈຳນວນ size L');
+      Swal.fire({
+           position: 'center-start',
+           type: 'warning',
+           title:'<span class="fontlaos">ກະລຸນາປ້ອນຈຳນວນ size L</span>',
+           showConfirmButton: false,
+           timer: 2500
+         });
+       
      }else if(xl == ''){
-        alert('ກະລຸນາໃສຈຳນວນ size XL')
+      Swal.fire({
+           position: 'center-start',
+           type: 'warning',
+           title:'<span class="fontlaos">ກະລຸນາປ້ອນຈຳນວນ size XL</span>',
+           showConfirmButton: false,
+           timer: 2500
+         });
+       
      }else if(xxl == ''){
-        alert('ກະລຸນາໃສຈຳນວນ size XXL')
+      Swal.fire({
+           position: 'center-start',
+           type: 'warning',
+           title:'<span class="fontlaos">ກະລຸນາປ້ອນຈຳນວນ size XXL</span>',
+           showConfirmButton: false,
+           timer: 2500
+         });
+        
      }else if(free == ''){
-        alert('ກະລຸນາໃສຈຳນວນ size FREE')
+      Swal.fire({
+           position: 'center-start',
+           type: 'warning',
+           title:'<span class="fontlaos">ກະລຸນາປ້ອນຈຳນວນ size FREE</span>',
+           showConfirmButton: false,
+           timer: 2500
+         });
+        
      }else{
 
               var form = $('#formbanner')[0]; 
@@ -101,9 +164,23 @@ $(function () {
              url: "add_proccess.php",
              data: data,
              success: function(result) {
-                    alert('ເພີ່ມລາຍການສິນຄ້າແລ້ວ');
-                    that.reset();
-                    $("#img").val("");
+
+                       Swal.fire({
+                          type:'success',
+                          title:'<span class="fontlaos">ເພີ່ມລາຍການສິນຄ້າແລ້ວ</span>',
+                          showConfirmButton: false,
+                          timer:1900            
+                       });  
+                  window.setTimeout(function(){ 
+                        that.reset();
+                         $('#myImg').attr('src', '');
+                    } ,1900);
+
+
+
+
+                    
+                     
                  }
             });
                             }

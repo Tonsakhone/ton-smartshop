@@ -17,6 +17,8 @@
 	$rs_size=mysqli_query($con,$sql_size);
 	}
  ?>
+
+ <input type="hidden" name="" id="pro_id" value="<?php echo $id; ?>">
 <!-- banner -->
 <div class="page-head">
 	<div class="container">
@@ -64,7 +66,7 @@
 					<div class="color-quality">
 						<div class="color-quality-right">
 							<h5 class="fontlaos">ຂະໜາດ :</h5>
-							<select id="country1" onchange="change_country(this.value)" class="frm-field required sect">
+							<select id="country1" onchange="getSelectValue()" class="frm-field required sect">
 								<?php while ($row_size= mysqli_fetch_array($rs_size)) { ?>
 								<option  value="<?php echo $row_size['size_no']; ?>" ><?php echo $row_size['name_size']; ?></option>	
 								<?php } ?>						
@@ -157,3 +159,39 @@
     });
   });
 </script>	
+
+<script type="text/javascript">
+                var data = "size_no=" +$("#country1").val()  + "&pro_id=" + $("#pro_id").val();
+                        $.ajax({
+                                 type: "POST",
+                                 url: "checkQtt.php",
+                                 data: data,
+                                 success: function(result) {
+                                     $("#qtt").attr({
+      										"max" : result,       
+    									});	
+                                     $("#qtt").val(result);
+                                   
+                                 }
+
+                             });
+
+                    function getSelectValue()
+                    {
+                       var data = "size_no=" +$("#country1").val()  + "&pro_id=" + $("#pro_id").val();
+                        $.ajax({
+                                 type: "POST",
+                                 url: "checkQtt.php",
+                                 data: data,
+                                	 success: function(result) {
+                                  		$("#qtt").attr({
+      										"max" : result,       
+    									});	
+                                     		$("#qtt").val(result);
+                                 	}
+
+                             });
+                    }
+                        getSelectValue(selectedValue);
+
+</script>

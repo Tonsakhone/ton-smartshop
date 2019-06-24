@@ -141,8 +141,8 @@
 
         Swal.fire({
             title: '<span class="fontlaos">ທ່ານຕ້ອງການລົບການສັ່ງຊື້ນີ້ ຫຼື ບໍ່</span> ?',
-            html: '<span class="fontlaos">ທ່ານຕ້ອງລ໊ອກອິນກ່ອນ ຈຶ່ງສາມາດເຂົ້າເບິ່ງໄດ້<br> ທ່ານຕ້ອງການລ໊ອກອິນ ຫຼື ບໍ່ ?</span>',
-            type: 'warning',
+            html: '<span class="fontlaos">ການສັ່ງຊື້ຈະຖືກລົບໃນຟັງຂອງຜູ້ໃຊ້ງານພ້ອມ</span>',
+            type: 'question',
             showCancelButton: true,
             confirmButtonColor: '#3085d6',
             cancelButtonColor: '#d33',
@@ -154,8 +154,15 @@
                     url: "delete_order.php",
                     data: {id:no},
                         success: function(result) {
-                            alert(result);
-                            location.reload();
+                            Swal.fire({
+                                type:'success',
+                                title:'<span class="fontlaos">ລົບການສັ່ງຊື້ສຳເລັດ</span>',
+                                showConfirmButton: false,
+                                timer:1900            
+                            });  
+                                window.setTimeout(function(){ 
+                                  location.reload();
+                                } ,1900);
                         }
               });
           }

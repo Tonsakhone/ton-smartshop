@@ -11,7 +11,7 @@
            <div class="xs tabls">
             <div class="bs-example4" data-example-id="contextual-table">
                 
-                <h type="" class=" btn-primary btn-lg btn-block insert" data-toggle="modal" ><center><h2 class=" fontlaos"><b>ໃບບິນທັງໝົດ<b></h2></center></button>
+                <h type="" class=" btn-primary btn-lg btn-block insert" data-toggle="modal" ><center><h2 class=" fontlaos"><b>ປະຫວັດການສັ່ງຊື້ ແລະ ໃບບິນທັງໝົດ<b></h2></center></button>
                 
             </div>
           </div>
@@ -52,7 +52,7 @@
 
      <tbody class="bill">
       <tr>
-        <td><a href="order_view.php?bill_no=<?php echo $row['bill_no']; ?>"><i class="fas fa-file-invoice"></i> <?php echo $row['bill_no']; ?></a></td>
+        <td><a href="bill_detail.php?bill_no=<?php echo $row['bill_no']; ?>"><i class="fas fa-file-invoice"></i> <?php echo $row['bill_no']; ?></a></td>
         <td><button type="button" class="btn btn-link view_user" id="<?php echo $user_no; ?>"><i class="far fa-user"></i> <b><?php echo $row['user_name']; ?></b></button></td>
         <td><?php echo $row['date'] ;?></td>
         <td><button class="btn btn-danger del fontlaos" id="<?php echo $row['bill_no']; ?>"><i class="fas fa-trash"></i> ລົບ</button></td>
@@ -93,8 +93,15 @@
              url: "bill_del.php",
              data: {id:bill_id},
              success: function(result) {
-               alert('ສຳເລັດ');
-               location.reload();
+                 Swal.fire({
+                      type:'success',
+                      title:'<span class="fontlaos">ການລົບສຳເລັດ</span>',
+                      showConfirmButton: false,
+                      timer:1900            
+                  });  
+                      window.setTimeout(function(){ 
+                        location.reload();
+                      } ,1900);
              }
 
       });

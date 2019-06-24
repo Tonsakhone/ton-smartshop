@@ -2,7 +2,7 @@
   <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
  <link href="css/form_register.css" rel="stylesheet">
   <link href="css/login.css" rel="stylesheet">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/b220043b3b.js"></script>
 
   <script src="admin/dist/sweetalert2.min.js"></script>
@@ -163,7 +163,7 @@
                                       Swal.fire({
                                           position: 'center',
                                           type: 'warning',
-                                          title: '<span class="fontlaos">ກະລູນາປ້ອນຊື່ຜູ້ໃຊ້ ແລະ ນາມສະກຸນ ເປັນພາສາອັງກິດ</span>',
+                                          title: '<span class="fontlaos">ກະລຸນາປ້ອນຊື່ຜູ້ໃຊ້ ແລະ ນາມສະກຸນ ເປັນພາສາອັງກິດ</span>',
                                           showConfirmButton: false,
                                           timer: 3500
                                         });
